@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <form name="form1" onsubmit = "validateForm()">
+            Name:<input type="text" name="input1"><br>
+            Password:<input type="password" name="pwd1"><br>
+            <input type="submit" value="signin"><br>
+        </form>
+    </body>
+    <script>
+        function validateForm()
+        {
+            var name = document.form1.input1.value;
+            var pass = document.form1.pwd1.value;
+            if(!name)
+            {
+                alert("error in the name");
+            }
+            else if(pass.length < 6){
+                alert("error pass must be min 6 characters long");
+            }
+        }
+    </script>
+</html>

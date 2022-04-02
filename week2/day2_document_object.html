@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // getElementById()
+        function getCube(){
+            var number = document.getElementById("number").value;
+            alert(number*number*number);
+        }
+        function total(){
+            var gen = document.getElementsByName("gender");
+            alert("total genders:" + total.length)
+        }
+
+        function countH2(){
+            var h2_count = document.getElementsByTagName("h3");
+            alert("total h2 elements:" + h2_count.length)
+        }
+
+        function countH3(){
+            var h3_count = document.getElementsByTagName("h3");
+            alert("total h3 elements:" + h3_count.length)
+}
+
+    </script>
+</head>
+<body>
+    <!--write(), writeln(), getElementById(), getElementsByClassName(), getElementsByName(), getElementsByTagName()-->
+    <!--getElementById()-->
+    <form>
+        enter no:<input type="text" id="number" name="number"><br>
+        <input type="button" value="Cube" onclick="getCube()">
+    </form>
+
+    <!--getElementsByName()-->
+    <form>
+        Male:<input type="radio" name="gender" value="male"><br>
+        Female:<input type="radio" name="gender" value="female"><br>
+        <input type="button" value="total genders" onclick="total()">
+    </form>
+
+    <h2> i am h2</h2>
+    <h2> i am h2</h2>
+    <h3> i am h2</h3>
+    <h3> i am h2</h3>
+    <h3> i am h2</h3>
+    <button type="button" onclick="countH2()">count h2</button>
+    <button type="button" onclick="countH3()">count h3</button>
+
+    <!--getElementsByClassName-->
+
+    <h2>html dom</h2>
+    <p class="demo1">hello world</p>
+    <p class="demo1">hello world. how are you?</p>
+    <p id="demo"></p>
+
+
+</body>
+<script>
+    //getElementsByClassName()
+    const x = document.getElementsByClassName("demo1");
+    document.getElementById("demo").innerHTML = "the content of first paragraph is " + x[1].innerHTML;
+    document.getElementById("demo").style.color = "red";
+    document.getElementById("demo").id = "testing"; 
+    document.getElementById("testing").style.color = "green";
+
+</script>
+</html>

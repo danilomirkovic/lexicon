@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <!--window object
+            alert(), confirm(), prompt(), open(), close()...
+        -->
+        <script>
+            //window.alert("hello this is an elert");
+
+            function msg_confirm()
+            {
+                var v = confirm("are you sure");
+                if (v == true)
+                    {
+                        alert("oke");
+                    }
+                else{
+                    alert("cancel");
+                }
+            }
+            function msg_open()
+            {
+                window.open("https://www.google.com")
+            }
+            
+        </script>
+        alert:<input type="button" value="click" onclick="msg_confirm()">
+        open:<input type="button" value="click" onclick="msg_open()">
+
+        
+
+    </body>
+</html>

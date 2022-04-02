@@ -1,0 +1,15 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    function myfun(w, h, W, H){
+            return w*h+W*H-(Math.max(w,W)-Math.min(w,W))-Math.min(h,H);
+    }
+    document.getElementById("demo").innerHTML = myfun(13,2,5,8);
+</script>
+</html>

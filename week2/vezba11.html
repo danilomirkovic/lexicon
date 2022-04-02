@@ -1,0 +1,18 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    
+    function myfun(x1,y1,x2,y2){
+        a = Math.abs(x1-x2)
+        b = Math.abs(y1-y2)
+        return (Math.sqrt(a*a+b*b))
+    }
+    document.getElementById("demo").innerHTML = myfun(2,4,5,0);
+</script>
+</html>

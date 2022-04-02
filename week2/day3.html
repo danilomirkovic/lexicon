@@ -1,0 +1,111 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+
+    </body>
+    <script>
+        class Employee
+        {
+            
+            constructor(id, name)
+            {
+                this.id = id;
+                this.name = name;
+            }
+
+            detail()
+            {
+                document.write(this.id + " " + this.name);
+            }
+
+        }
+        
+        class Emp{
+            constructor(id, age)
+            {
+                this.id = id;
+                this.age = age;
+            }
+            static display()
+            {
+                return "static method invoked";
+            }
+        }
+
+        document.write(Emp.display() + "<br>");
+
+        var e1 = new Employee(10, "abc");
+        e1.detail();
+
+        //encapsulation
+
+        class Student{
+            constructor()
+            {
+                var name;
+                var marks;
+            }
+            getName()
+            {
+                return this.name;
+            }
+            setName(name){
+                this.name = name;
+            }
+            getMarks()
+            {
+                return this.marks;
+            }
+            setMarks(marks){
+                this.marks = marks;
+            }
+        }
+        var s1 = new Student();
+        s1.setName("abc");
+        s1.setMarks(23);
+        document.write("<br>" + s1.getName() + " " + s1.getMarks())
+
+        //inheritance
+
+        class car 
+        {
+            constructor(color, model, year)
+            {
+                this.color = "red";
+                this.model = "old";
+                this.year = "2016";
+            }
+            starting()
+            {
+                document.write("car started");
+            }
+        }
+        class volvo extends car
+        {
+            constructor(type)
+            {
+                super();
+                this.type = type;
+            }
+            moving()
+            {
+                document.write("car is moving");
+            }
+        }
+        var v1 = new volvo("hybrid");
+        v1.starting();
+        v1.moving();
+
+        //polymorphism
+
+        sum(a,b);
+        sum(a,b,c);
+        
+        
+
+        
+    </script>
+</html>

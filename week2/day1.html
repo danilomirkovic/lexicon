@@ -1,0 +1,79 @@
+<html>
+<head>
+<title> JS Instruction</title>
+<meta charset="UTF=8">
+<meta  name="viewport " content="width=device-width, initial-scale=1.0">
+
+<!-- src="js_file.js"-->
+<script>
+    function display(){
+        document.getElementById("id1").innerHTML ="hello how are you";
+        var v1 = 10; //global scope
+        let v2 = 20; //block scope
+        var z = v1+v2;
+        document.write(z);
+        let l1 = 10;
+        document.write(l1);
+        const a1 = 500;
+        }
+    function msg(){
+        alert("hello world")
+    }
+
+    //different data types
+    var s1 = 10;
+    var s2 = "hello";
+    var s3 = ' ';
+
+    /*conditional statments in JS
+    if statment
+    if else
+    if else if
+    */
+/*
+    var a12 = 10;
+    if(a12 > 10){
+        document.write("value of a12 is greater then 10");
+    }
+    else if(a12 == 10){
+        document.write("value of a12 is same as 10");
+    }
+    else{
+        document.write("value of a12 is less then 10");
+    }
+*/
+    /*Loops
+    for
+    while
+    do while
+    for-in
+    */
+
+    /*for(i=0; i<10;i++){
+        document.write(" the value is " + i)
+    }
+*/
+    function fun(number){
+        write(number*number);
+        //or "return number;"
+    }
+
+
+</script>
+
+<!-- document.getElementByClass("xqz")...p class="xqz"-->
+
+</head>
+
+<body>
+
+<p id="id1"></p>
+<button type="button" name="btn1" value="Click me" onclick="display()">click me</button>
+<button type="button" name="btn2" onclick="msg()">Message</button>
+
+<!--"// single line comment"
+/*multi line*/-->
+
+
+</body>
+</html>

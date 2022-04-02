@@ -1,0 +1,61 @@
+<html>
+<head>
+    
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="array"></p>
+    <script>
+        emp = {id:102, name:"xyz", salary:50000}
+        document.write("<br>" + emp.id + " " + emp.name + " " + emp.salary);
+        //using new keyword
+        var emp1 = new Object();
+        emp1.id = 103;
+        emp1.name = "danlo";
+        emp1.salary = 100000;
+        document.write("<br>" + emp1.id + " " + emp1.name + " " + emp1.salary);
+        //accessing the properties objname.property; objectname[property];
+        emp1.country = "Sweden";
+        //for in  loop
+        let emp_data = "";
+        for(i in emp1){
+            emp_data += emp1[i] + " ";
+        }
+        document.write("<br>" + emp_data);
+        delete emp1.country;
+
+        document.getElementById("demo").innerHTML = Object.values(emp);
+        
+        //JS array
+
+        var emp2 = ["xyz", "abc", "pqr"];
+        var emp3 = new Array();
+        emp3[0] = "abc";
+        emp3[1] = "bla";
+        emp3[2] = "csw";
+
+        var emp1_info = emp2[0];
+        var emp3_info = emp2[2];
+        
+
+        emp2[1] = "tyu";
+        document.getElementById("array").innerHTML = emp2;
+
+        for(i=0; i < emp2.length; i++){
+            document.write("<br>"+ emp2[i])
+        }
+
+        //JS date object
+
+        var today = new Date();
+        document.write("<br>" + today);
+
+        //JS math object
+
+        var m1 = Math.sqrt(4);
+        document.write("<br>" + m1);
+
+    </script>
+
+</body>
+</html>
